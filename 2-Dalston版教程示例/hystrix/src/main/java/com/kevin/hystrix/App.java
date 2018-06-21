@@ -14,7 +14,7 @@ public class App implements InitializingBean {
 	private StoreIntegration service;
 
 	public static void main(String[] args) {
-		new SpringApplicationBuilder(App.class).web(false).run(args);
+		new SpringApplicationBuilder(App.class).web(true).run(args);
 	}
 
 	public void afterPropertiesSet() throws Exception {
