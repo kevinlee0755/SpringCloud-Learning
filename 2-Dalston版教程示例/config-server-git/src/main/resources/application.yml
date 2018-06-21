@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: http://git.oschina.net/didispace/config-repo-demo/
+          uri: https://gitee.com/didispace/config-repo-demo/
           basedir: config
 #          search-paths: repo
 #          username:

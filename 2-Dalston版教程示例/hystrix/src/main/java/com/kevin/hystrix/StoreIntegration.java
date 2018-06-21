@@ -11,8 +11,9 @@ public class StoreIntegration {
 
     @HystrixCommand(fallbackMethod = "defaultStores")
     public Object getStores(Map<String, Object> parameters) {
+    	if(parameters==null)
+    		throw new RuntimeException("¥÷¥¡¡À");
 //    	if(1==1)
-//    		throw new RuntimeException("¥÷¥¡¡À");
         return "hello";
     }
 
