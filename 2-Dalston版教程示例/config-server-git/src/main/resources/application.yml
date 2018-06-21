@@ -6,6 +6,7 @@ spring:
       server:
         git:
           uri: http://git.oschina.net/didispace/config-repo-demo/
+          basedir: config
 #          search-paths: repo
 #          username:
 #          password:
