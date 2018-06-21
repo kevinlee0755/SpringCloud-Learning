@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: eureka-client
+server:
+  port: 2001
+logging:
+  file: ${spring.application.name}.log
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.int}
+#    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1001/eureka/
+#    healthcheck:  # 健康检查
+#      enabled: true
+      
+#eureka.client.serviceUrl.defaultZone=http://peer1:1001/eureka/,http://peer2:1002/eureka/
+
+#eureka.instance.prefer-ip-address=true
+
+
+# 随机端口配置
+#eureka.instance.instance-id=${spring.application.name}:${random.int}
+#server.port=0
+#server.port=${random.int[10000,19999]}
