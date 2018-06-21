@@ -1,0 +1,6 @@
+server:
+  port: 1235
+
+store:
+  ribbon:
+    listOfServers: localhost:1234,localhost:2000
